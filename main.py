@@ -40,3 +40,4 @@ async def convert_pdf_to_word(file: UploadFile = File(...), authorization: str =
         filename=file.filename.replace(".pdf", ".docx"),
         media_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
     )
+print(f"🚀 API_KEY loaded: {API_KEY}")
